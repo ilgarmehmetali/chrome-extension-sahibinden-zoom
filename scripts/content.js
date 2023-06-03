@@ -31,16 +31,16 @@ document.addEventListener("wheel", (event) => {
 
 document.addEventListener("keypress", function onEvent(event) {
   if (event.key === "a") {
-    leftValue--;
-  }
-  else if (event.key === "d") {
     leftValue++;
   }
+  else if (event.key === "d") {
+    leftValue--;
+  }
   else if (event.key === "w") {
-    topValue--;
+    topValue++;
   }
   else if (event.key === "s") {
-    topValue++;
+    topValue--;
   }
   image.style.left = (leftValue * coefficient) + "px";
   image.style.top = (topValue * coefficient) + "px";
