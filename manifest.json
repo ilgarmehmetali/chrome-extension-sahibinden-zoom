@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Sahibinden tam ekran resim zoom",
+  "version": "1.0",
+  "description": "Sahibinden tam ekran resim ekranına zoom özelliği ekler. Mouse tekerleği ile zoom yapabilir, wasd tuşları ile resmi hareket ettirebilirsiniz.",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.sahibinden.com/*"
+      ]
+    }
+  ]
+}
